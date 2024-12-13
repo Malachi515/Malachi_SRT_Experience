@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/hellcat-chrome-512x512.png"
+    />
+    <title>Malachi's SRT Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="colomn-left">
+      <div class="box darkred center-content font">
+        <a onclick="goToFilm()">FILM</a>
+      </div>
+      <div class="box1 darkred center-content font">
+        <a onclick="goToGame()">GAME</a>
+      </div>
+    </div>
+
+    <div class="colomn-right black">
+      <div class="right-row-TB black">
+        <div class="box-small1 black center-content">
+          <img
+            src="images/Trunk_v2.png"
+            onmouseover="playHoverSound()"
+            onclick="playTrunk()"
+            class="smallerimg"
+          />
+        </div>
+        <div class="box-small black center-content">
+          <img
+            src="images/Hellcat_engine.png"
+            onmouseover="playHoverSound()"
+            onclick="goToEngine()"
+          />
+        </div>
+        <div class="box-small black center-content">
+          <img
+            src="images/Hellcat-Door.png"
+            onmouseover="playHoverSound()"
+            onclick="goToInside()"
+          />
+        </div>
+      </div>
+
+      <div class="right-row-middle black center-content">
+        <img src="images/Hellcat_Exterior.jpg" />
+      </div>
+
+      <div class="right-row-TB black">
+        <div class="box-small1 black center-content">
+          <img
+            src="images/Start_v2.png"
+            onmouseover="playHoverSound()"
+            onclick="playStart()"
+            class="smallerimg"
+          />
+        </div>
+        <div class="box-small1 black center-content">
+          <img
+            src="images/Hellcat_Key-removebg-preview copy (1) (1).png"
+            onclick="playLockUnlock()"
+            onmouseover="playHoverSound()"
+            class="smallerimg"
+          />
+        </div>
+        <div class="box-small black center-content">
+          <img
+            src="images/Hellcat_Panic.png"
+            onmouseover="playHoverSound()"
+            onclick="playPanic()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <audio src="sounds/Lock_Unlock_sound.mp3" id="Lock"></audio>
+    <audio src="sounds/Hellcat_Start.mp3" id="Start"></audio>
+    <audio src="sounds/Door_open1.mp3" id="Door"></audio>
+    <audio src="sounds/Trunk-open-v2.mp3" id="Trunk"></audio>
+    <audio src="sounds/Car alarm sound effect.mp3" id="Panic"></audio>
+    <audio src="sounds/select_clip.mp3" id="Select"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

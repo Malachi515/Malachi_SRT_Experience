@@ -1,0 +1,159 @@
+/* Add filters: https://www.w3schools.com/cssref/css3_pr_filter.asp */
+/* Make your own favicon: https://favicon.io/ */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+/* build your layout */
+.colomn-left {
+  height: 100%;
+  width: 20%;
+  display: block;
+}
+.colomn-right {
+  height: 100%;
+  width: 80%;
+  display: block;
+}
+
+.right-row-TB {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+.right-row-middle {
+  height: 60%;
+  width: 100%;
+  background-image: url("images/Carbon-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box-small {
+  height: 100%;
+  width: calc(100% / 3);
+  background-image: url("images/Carbon-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box-small1 {
+  height: 100%;
+  width: calc(100% / 3);
+  background-image: url("images/Carbon-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* control your content */
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.smallerimg {
+  max-height: 80%;
+  max-width: 80%;
+}
+.smallerimg:hover {
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.box {
+  height: 50%;
+  width: 100%;
+}
+
+.box1 {
+  height: 50%;
+  width: 100%;
+  filter: drop-shadow(2px 8px 100px);
+  transform: scale(0.95);
+}
+
+.box-small img:hover {
+  cursor: pointer;
+  max-height: 110%;
+  max-width: 110%;
+}
+
+.font {
+  font-family: "bebas neue";
+}
+/* colors */
+.orange {
+  background-color: #f3a903;
+}
+.blue {
+  background-color: #2955dc;
+}
+.dark-grey {
+  background-color: #707070;
+}
+.red {
+  background-color: red;
+}
+.gold {
+  background-color: gold;
+}
+.darkred {
+  background-color: darkred;
+}
+.light-grey {
+  background-color: lightgray;
+}
+
+.black {
+  background-color: black;
+}
+
+a {
+  cursor: pointer;
+  color: white;
+  font-size: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+  .colomn-left {
+    height: 10%;
+    width: 100%;
+    display: flex;
+  }
+  .colomn-right {
+    height: 90%;
+    width: 100%;
+    display: block;
+  }
+  .right-row-TB {
+    display: flex;
+  }
+  .box {
+    height: 100%;
+  }
+
+  .box1 {
+    height: 100%;
+    border-color: black;
+  }
+
+  a {
+    color: white;
+    font-size: 90px;
+  }
+}
